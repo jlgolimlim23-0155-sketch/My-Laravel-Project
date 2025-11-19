@@ -5,7 +5,7 @@ use App\http\Controllers\AuthController;
 use App\http\Controllers\mainController;
 route::get('/',[mainController::class,'index']);
 Route::get('/', function () {
-    return view('JP_PORTFOLIO');
+    return view('JG_PORTFOLIO');
 });
 
 Route::get('/register', [AuthController::class, 'showRegister' ]) ->name('register.form');
